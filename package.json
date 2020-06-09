@@ -1,0 +1,88 @@
+{
+  "name": "learn-phrases",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "build:stats": "ng build --prod --stats-json",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "analyze": "webpack-bundle-analyzer ./dist/learn-phrases/stats-es2015.json",
+    "coverage": "http-server -c-1 -o -p 9875 ./coverage/learn-phrases"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "9.1.9",
+    "@angular/common": "9.1.9",
+    "@angular/compiler": "9.1.9",
+    "@angular/core": "9.1.9",
+    "@angular/forms": "9.1.9",
+    "@angular/platform-browser": "9.1.9",
+    "@angular/platform-browser-dynamic": "9.1.9",
+    "@angular/router": "9.1.9",
+    "rxjs": "6.5.5",
+    "tslib": "2.0.0",
+    "zone.js": "0.10.3"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "0.901.7",
+    "@angular/cli": "9.1.7",
+    "@angular/compiler-cli": "9.1.9",
+    "@commitlint/config-conventional": "8.3.4",
+    "@types/jasmine": "3.5.10",
+    "@types/jasminewd2": "2.0.8",
+    "@types/node": "14.0.12",
+    "angular-tslint-rules": "1.20.4",
+    "codelyzer": "5.2.2",
+    "commitlint": "8.3.5",
+    "http-server": "0.12.3",
+    "husky": "4.2.5",
+    "istanbul-instrumenter-loader": "3.0.1",
+    "jasmine-core": "3.5.0",
+    "jasmine-reporters": "2.3.2",
+    "jasmine-spec-reporter": "5.0.2",
+    "karma": "5.0.9",
+    "karma-chrome-launcher": "3.1.0",
+    "karma-coverage-istanbul-reporter": "3.0.3",
+    "karma-jasmine": "3.3.1",
+    "karma-jasmine-html-reporter": "1.5.4",
+    "karma-junit-reporter": "2.0.1",
+    "karma-spec-reporter": "0.0.32",
+    "karma-webdriver-launcher": "1.0.8",
+    "lint-staged": "10.2.9",
+    "nyc": "15.1.0",
+    "protractor": "7.0.0",
+    "ts-node": "8.10.2",
+    "tslint": "6.1.2",
+    "typescript": "3.8.3",
+    "webpack-bundle-analyzer": "3.8.0"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "scope-case": [
+        2,
+        "always",
+        [
+          "lower-case",
+          "upper-case"
+        ]
+      ]
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "tslint --fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
