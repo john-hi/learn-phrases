@@ -1,0 +1,140 @@
+{
+  "extends": [
+    "angular-tslint-rules"
+  ],
+  "rules": {
+    "array-type": false,
+    "arrow-parens": true,
+    "component-selector": [
+      true,
+      "element",
+      [
+        "app",
+        "lf"
+      ],
+      "kebab-case"
+    ],
+    "directive-selector": [
+      true,
+      "attribute",
+      [
+        "app",
+        "lf"
+      ],
+      "camelCase"
+    ],
+    "member-access": true,
+    "member-ordering": [
+      true,
+      {
+        "order": [{
+            "kinds": [
+              "public-static-field",
+              "protected-static-field"
+            ],
+            "name": "public static field"
+          },
+          {
+            "kinds": [
+              "private-static-field"
+            ],
+            "name": "private static field"
+          },
+          {
+            "kinds": [
+              "public-instance-field",
+              "protected-instance-field"
+            ],
+            "name": "public instance field"
+          },
+          {
+            "kinds": [
+              "private-instance-field"
+            ],
+            "name": "private instance field"
+          },
+          {
+            "kinds": [
+              "public-static-method",
+              "protected-static-method",
+              "public-static-accessor",
+              "protected-static-accessor"
+            ],
+            "name": "public static method"
+          },
+          {
+            "kinds": [
+              "private-static-method",
+              "private-static-accessor"
+            ],
+            "name": "private static method"
+          },
+          {
+            "kinds": [
+              "public-constructor",
+              "protected-constructor",
+              "public-instance-method",
+              "protected-instance-method",
+              "public-instance-accessor",
+              "protected-instance-accessor"
+            ],
+            "name": "public instance method"
+          },
+          {
+            "kinds": [
+              "private-constructor",
+              "private-instance-method",
+              "private-instance-accessor"
+            ],
+            "name": "private instance method"
+          }
+        ]
+      }
+    ],
+    "newline-before-return": false,
+    "newline-per-chained-call": false,
+    "no-floating-promises": false,
+    "no-implicit-dependencies": [
+      true,
+      "dev"
+    ],
+    "no-null-keyword": true,
+    "no-null-undefined-union": false,
+    "no-object-literal-type-assertion": false,
+    "no-void-expression": [
+      true,
+      "ignore-arrow-function-shorthand"
+    ],
+    "object-literal-key-quotes": false,
+    "object-literal-shorthand": false,
+    "only-arrow-functions": [
+      true,
+      "allow-declarations"
+    ],
+    "ordered-imports": [
+      true,
+      {
+        "grouped-imports": true,
+        "import-sources-order": "case-insensitive",
+        "module-source-path": "full",
+        "named-imports-order": "case-insensitive"
+      }
+    ],
+    "prefer-inline-decorator": false,
+    "prefer-on-push-component-change-detection": true,
+    "strict-boolean-expressions": false,
+    "template-cyclomatic-complexity": false,
+    "template-i18n": true,
+    "template-no-call-expression": false,
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore",
+      "allow-pascal-case"
+    ]
+  },
+  "rulesDirectory": [
+    "codelyzer"
+  ]
+}
