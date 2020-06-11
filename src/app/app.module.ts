@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ServiceWorkerModule } from '@angular/service-worker';
+
+import { environment } from '../environments/environment';
 
 import { AppRootComponent } from './app-root/app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -10,6 +13,8 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+
     AppRoutingModule
   ],
   providers: [],
