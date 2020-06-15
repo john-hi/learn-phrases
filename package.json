@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "build:ci": "ng build --prod",
+    "build:pages": "ng build --prod --base-href=/learn-phrases/",
     "build:stats": "ng build --prod --stats-json",
     "test": "ng test",
     "test:ci": "ng test --watch=false",
