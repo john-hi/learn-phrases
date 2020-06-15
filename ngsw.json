@@ -1,0 +1,80 @@
+{
+  "configVersion": 1,
+  "timestamp": 1592225172362,
+  "index": "/learn-phrases/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/learn-phrases/favicon.ico",
+        "/learn-phrases/index.html",
+        "/learn-phrases/main-es2015.1a1dae466fc510ceadfd.js",
+        "/learn-phrases/main-es5.1a1dae466fc510ceadfd.js",
+        "/learn-phrases/manifest.webmanifest",
+        "/learn-phrases/polyfills-es2015.690002c25ea8557bb4b0.js",
+        "/learn-phrases/polyfills-es5.9e286f6d9247438cbb02.js",
+        "/learn-phrases/runtime-es2015.1eba213af0b233498d9d.js",
+        "/learn-phrases/runtime-es5.1eba213af0b233498d9d.js",
+        "/learn-phrases/styles.09e2c710755c8867a460.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/learn-phrases/assets/icons/icon-128x128.png",
+        "/learn-phrases/assets/icons/icon-144x144.png",
+        "/learn-phrases/assets/icons/icon-152x152.png",
+        "/learn-phrases/assets/icons/icon-192x192.png",
+        "/learn-phrases/assets/icons/icon-384x384.png",
+        "/learn-phrases/assets/icons/icon-512x512.png",
+        "/learn-phrases/assets/icons/icon-72x72.png",
+        "/learn-phrases/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/learn-phrases/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/learn-phrases/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/learn-phrases/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/learn-phrases/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/learn-phrases/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/learn-phrases/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/learn-phrases/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/learn-phrases/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/learn-phrases/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/learn-phrases/index.html": "bf17dda2cbe1267b3cd238d84632a51ce413a31a",
+    "/learn-phrases/main-es2015.1a1dae466fc510ceadfd.js": "dcca7f10e0216bd0580cd65b364082006f93bd8d",
+    "/learn-phrases/main-es5.1a1dae466fc510ceadfd.js": "477cfbc3a4e8b3f5c88d2066d93cebbfb5463110",
+    "/learn-phrases/manifest.webmanifest": "1b7913028e95762caf2a9866ce8183d1d933dd4c",
+    "/learn-phrases/polyfills-es2015.690002c25ea8557bb4b0.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
+    "/learn-phrases/polyfills-es5.9e286f6d9247438cbb02.js": "8aa26ea87b9958c6bd13b7c257c0e9940438e684",
+    "/learn-phrases/runtime-es2015.1eba213af0b233498d9d.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/learn-phrases/runtime-es5.1eba213af0b233498d9d.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/learn-phrases/styles.09e2c710755c8867a460.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
